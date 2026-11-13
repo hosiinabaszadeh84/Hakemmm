@@ -1,0 +1,6 @@
+{
+  "name": "حاکم ذهن | Hakemzehn",
+  "description": "حاکم ذهن - راهنمای علمی، بدون قضاوت و گام‌به‌گام رهایی از پورنوگرافی و خودارضایی با متد ثبت مستقل، ترمز اضطراری ذهن و اپلیکیشن اندروید",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+/* ==========================================================================
+   Hakem Zehn Reference Design System — Legacy Token Entry (v2.1)
+   Delegates all visual tokens directly to /design-system/theme.css
+   ========================================================================== */
+
+@import url('/design-system/theme.css');

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "../public/design-system/theme.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: var(--theme-font-sans, 'Vazirmatn', sans-serif);
+}
+
+body {
+  margin: 0;
+  font-feature-settings: "cv01", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme-navy-900);
+  color: var(--theme-text-primary);
+}
+
+/* Custom smooth transitions for subtle UI glow and breath rhythms */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px -5px rgba(231, 198, 139, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 45px 5px rgba(114, 216, 219, 0.35);
+  }
+}
+
+.glow-emerald {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--theme-navy-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-slate-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-slate-border-strong);
+}
